@@ -1,0 +1,34 @@
+<view class="page-body">  
+  <!--
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  -->
+  <view class="page-section">
+    <view class="weui-cells__title">姓名{{inputValue}}</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  maxlength="10" auto-focus bindinput="bindKeyInput1" placeholder="请输入您的姓名"/>
+      </view>
+    </view>
+  </view>
+  
+  
+  <view class="page-section">
+    <view class="weui-cells__title">身份证号</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="idcard" auto-focus bindinput="bindKeyInput2" placeholder="请输入您的身份证号" />
+      </view>
+    </view>
+  </view>
+  <view> {{name}} </view>
+  <view> {{id}} </view>
+  <view class="button-sp-area">
+    <button type="primary" bindtap="jumptogetface">继续</button>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+| check_record | CREATE TABLE `check_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `covid_rate` FLOAT NOT NULL,
+  `city` varchar(20) DEFAULT NULL,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 |

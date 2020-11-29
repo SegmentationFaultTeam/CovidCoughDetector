@@ -1,0 +1,39 @@
+/* pages/welcome/welcome.wxss */
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.title{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+  font-weight: 300;
+  font-size-adjust: 1;
+}
+.picture{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+  font-weight: 300;
+  font-size-adjust: 1;
+}
+.mytext{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+  font-weight: 300;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}

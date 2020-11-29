@@ -1,0 +1,54 @@
+gunicorn -w 4 -b 172.17.23.158:8888 main:app
+
+nginx -c /etc/nginx/nginx.conf
+
+nginx.conf:
+http{
+server {
+  listen 80;
+  server_name 127.0.0.1;
+
+  location / {
+   proxy_pass http://127.0.0.1:8888/;
+  }
+ }
+}
+events {
+  worker_connections  1024;  ## Default: 1024
+}
+
+
+TestPath:http://47.102.200.200:80/v1/test
+Method:Get
+Output:"helloworld"
+
+CoughPath:http://47.102.200.200:80/v1/check/cough
+Method:Post
+Input Body(form-data):{cough:cough_file}
+Output:{rate:rate}
+Sample Output:{'rate': '0.0'}
+headers:
+Cache-Control:no-cache
+Content-Type:multipart/form-data; boundary=<calculated when request is sent>
+Content-Length:<calculated when request is sent>
+Host:<calculated when request is sent>
+User-Agent:PostmanRuntime/7.26.8
+Accept:*/*
+Accept-Encoding:gzip, deflate, br
+Connection:keep-alive
+
+FigurePath:http://47.102.200.200:80/v1/check/figure
+Method:Post
+Input Body(form-data):{figure:figure_file}
+Output:{id:id,name:name,rate:rate}
+Sample Output:{'id': 4, 'name': '小布什', 'rate': '0.0'}
+headers:
+coughtoken:coughtoken From Coughchecker API
+Cache-Control:no-cache
+Content-Type:multipart/form-data; boundary=<calculated when request is sent>
+Content-Length:<calculated when request is sent>
+Host:<calculated when request is sent>
+User-Agent:PostmanRuntime/7.26.8
+Accept:*/*
+Accept-Encoding:gzip, deflate, br
+Connection:keep-alive

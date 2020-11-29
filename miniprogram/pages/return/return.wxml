@@ -1,0 +1,13 @@
+<!--pages/return/return.wxml-->
+<view class="title">
+  <text>Your Result</text>
+</view>
+<view class="title">
+  <text>{{s1}}</text>
+</view>
+
+<view class="title">
+  <text>{{s2}}</text>
+</view>
+
+<text></text>

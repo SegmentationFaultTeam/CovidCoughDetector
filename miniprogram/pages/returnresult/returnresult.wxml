@@ -1,0 +1,106 @@
+<!--pages/returnresult/returnresult.wxml-->
+
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">检测结果</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">防疫贴士</view>
+</view>
+ 
+<swiper current="{{currentTab}}" class="swiper-box" duration="450" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <!-- 检测结果 -->
+    <swiper-item>
+      <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+         <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+       </block>
+      </view>
+      <view class="usermotto">
+        <text class="user-motto">您好，{{s2}}</text>
+      </view>
+      <view class="usermotto">
+        <text class="user-motto">{{motto}}:{{s1}}</text>
+      </view>
+    </swiper-item>
+
+    <!--防疫贴士-->
+    <swiper-item>
+      <view class="hint">
+        <text>出门前</text>
+        <view class="subhint">
+            <text>开窗通风30分钟，量体温评估身体状况，不带病上班</text>
+          </view>
+      </view>
+      <view class="hint">
+        <text>乘电梯</text>
+          <view class="subhint">
+            <text>务必佩戴口罩，接触按钮时可用纸巾隔开</text>
+            <text>尽量不在电梯内交流，不扎堆乘坐电梯</text>
+          </view>
+      </view>
+      <view class="hint">
+        <text>上下班</text>
+          <view class="subhint">
+            <text>尽量选择步行、骑行或开私家车，乘坐公共交通时，应与他人保持距离，尽量避免用手触摸车上设施</text>
+          </view>
+      </view>
+      <view class="hint">
+        <text>办公时</text>
+          <view class="subhint">
+            <text>接触公用物品或传阅纸质文件前后需洗手</text>
+            <text>保持环境卫生清洁，重视手机、鼠标、键盘、文具等物品的消毒</text>
+          </view>
+      </view>
+      <view class="hint">
+        <text>就餐时</text>
+          <view class="subhint">
+            <text>选择单人单餐、单桌或隔离就坐，外卖尽量无接触拿取</text>
+          </view>
+      </view>
+      <view class="hint">
+        <text>采购时</text>
+          <view class="subhint">
+            <text>快速挑选，尽量一次性购买齐全，减少出门购物频次</text>
+            <text>自备购物袋，尽量减少与公共设施的接触</text>
+            <text>不采买来源不明的禽类，更不要吃野味</text>
+            <text>结账时不要拥挤，排队过程中和他人保持一定距离</text>
+          </view>
+      </view>
+      <view class="hint">
+        <text>回家后</text>
+          <view class="subhint">
+            <text>手不要碰口罩外侧，将其外折扎紧，装袋密封丢弃</text>
+            <text>使用流动清水认真洗手，并注意水龙头清洁</text>
+          </view>
+      </view>
+      <view class="hint">
+        <text>做饭时</text>
+          <view class="subhint">
+            <text>尽量吃新鲜食材，不要放置太久</text>
+            <text>肉类蛋类彻底煮熟后食用</text>
+          </view>
+      </view>
+      
+    </swiper-item>
+</swiper>
+
+
+
+
+
+
+
+    
+    
+
+  
+
+
+
+
+
+
+
+
+
+

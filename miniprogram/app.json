@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/identity/identity",
+    "pages/record/record",
+    "pages/rerecord/rerecord",
+    "pages/getface/getface",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/return/return",
+    "pages/returnresult/returnresult"
+  ],
+  "window": {
+    "navigationBarTitleText": "COVID-19咳嗽声检测",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <!--
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  -->
+  
+  <!--
+  <camera device-position="front" flash="off" binderror="error" style="width: 50%; height: 300px;"></camera>
+  <button type="primary" bindtap="takePhoto">拍照</button>
+  <view>预览</view>
+  <image mode="widthFix" src="{{src}}"></image>
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+-->
+<view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">可以自动聚焦的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="将会获取焦点"/>
+      </view>
+    </view>
+  </view>
+</view>
+
+  <view class="nextpage">
+    <button type="primary">跳转</button>
+  </view>
+
+</view>

@@ -1,0 +1,59 @@
+<view class="title">
+  <text>\n</text>
+</view>
+<view class="title">
+  <text>录制一段10s左右的咳嗽声音</text>
+</view>
+
+<view class="debugging">
+  <text>{{debuginfo}}</text>
+</view>
+
+<view class="mytext">
+  <view wx:if="{{wrec==0}}">
+    <text>\n\n请开始录音\n\n\n\n</text>
+    <view class="picture">
+      <image src='/img/record.png' width="100px" mode="widthFix"></image>
+    </view>
+
+  </view>
+</view>
+
+<view wx:if="{{wrec==0}}">
+    <view class="button-sp-area">
+        <button type="primary" bindtap="startit">录音</button>
+        <button type="default"  disabled="true" bindtap="pauseit">停止</button>
+
+    </view>
+</view>
+
+<!--
+<view wx:if="{{wrec==0 && itfirst==0}}">
+  <audio poster="/img/icon.jpg" name="Your cough" src="{{recrt}}" controls></audio>
+</view>
+-->
+
+<view wx:if="{{wrec==0 && itfirst==0}}">
+  <button type="primary" bindtap="submitit">提交</button>
+</view>
+
+<view wx:if="{{wrec==0 && itfirst==1}}">
+  <button  type="primary"  bindtap="submitit" disabled="true">提交</button>
+</view>
+
+<view class="mytext">
+  <view wx:if="{{wrec==1}}">
+    <text>\n\n正在录音\n\n\n\n</text>
+    <view class="picture">
+      <image src='/img/recording.png' width="100px" mode="widthFix"></image>
+    </view>
+
+  </view>
+</view>
+
+<view wx:if="{{wrec==1}}">
+    <view class="button-sp-area">
+        <button type="primary" disabled="true" bindtap="startit">录音</button>
+        <button type="default" bindtap="pauseit">停止</button>
+      </view>
+</view>

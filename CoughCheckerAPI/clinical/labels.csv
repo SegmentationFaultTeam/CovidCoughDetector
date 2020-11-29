@@ -1,0 +1,17 @@
+date,corona_test,age,gender,medical_history,smoker,patient_reported_symptoms,cough_filename
+4/21,negative,53,male,"none,",yes,"none,",neg-0421-083-cough-m-53.mp3
+4/21,positive,50,male,"Congestive heart failure,",no,"Shortness of breath,",pos-0421-084-cough-m-50.mp3
+4/21,negative,43,male,"none,",no,"Sore throat,",neg-0421-085-cough-m-43.mp3
+4/21,positive,65,male,"Asthma or chronic lung disease,",no,"Shortness of breath,New or worsening cough,",pos-0421-086-cough-m-65.mp3
+4/21,positive,40,female,"none,",no,"Sore throat,Loss of taste,Loss of smell,",pos-0421-087-cough-f-40.mp3
+4/21,negative,66,female,"Diabetes with complications,",no,"none,",neg-0421-088-cough-f-66.mp3
+4/21,negative,20,female,"none,",no,"none,",neg-0421-089-cough-f-20.mp3
+4/21,negative,17,female,"none,",no,"Shortness of breath,Sore throat,Body aches,",neg-0421-090-cough-f-17.mp3
+4/21,negative,47,male,"none,",no,"New or worsening cough,",neg-0421-091-cough-m-47.mp3
+4/21,positive,53,male,"none,",no,"Fever, chills, or sweating,Shortness of breath,New or worsening cough,Sore throat,Loss of taste,Loss of smell,",pos-0421-092-cough-m-53.mp3
+4/21,positive,24,female,"none,",no,"none,",pos-0421-093-cough-f-24.mp3
+4/21,positive,51,male,"Diabetes with complications,",no,"Fever, chills, or sweating,New or worsening cough,Sore throat,",pos-0421-094-cough-m-51.mp3
+4/22,negative,53,male,"none,",yes,"none,",neg-0422-095-cough-m-53.mp3
+4/22,positive,31,male,"none,",no,"Shortness of breath,New or worsening cough,",pos-0422-096-cough-m-31.mp3
+4/22,negative,37,male,"none,",no,"none,",neg-0422-097-cough-m-37.mp3
+4/22,negative,24,female,"none,",no,"New or worsening cough,",neg-0422-098-cough-f-24.mp3

@@ -1,0 +1,27 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="title">
+  <text>\n</text>
+</view>
+<view class="title">
+  <h1>COVID咳嗽声检测demo</h1>
+</view>
+<view class="title">
+  <image src='/img/icon.jpg' mode="widthFix"></image>
+</view>
+<view class="mytext">
+  <text>通过机器学习分析一段咳嗽的录音</text>
+</view>
+<view class="mytext">
+  <text>来判断是否感染新型冠状肺炎</text>
+</view>
+<view class="page-body">
+
+  <view class="button-sp-area">
+    <button type="primary" bindtap="jumptoidentity">开始</button>
+  </view>
+
+  <view class="button-sp-area">
+    <button type="default"  bindtap="jumptotest">关于本小程序</button>
+  </view>
+
+</view>
