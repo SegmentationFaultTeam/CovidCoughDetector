@@ -8,8 +8,21 @@
 
 ### 后端
 
+后端部署：
+在cough-checker-api根目录下使用gunicorn启动项目
+gunicorn -w 4 -b 内网IP:端口号 main:app &
 
+将nginx.conf和nginxssl.conf放入/etc/nginx文件夹下（只是建议，可以放在其他位置）后：
+nginx -c /etc/nginx/nginx.conf 或 nginx -c /etc/nginx/nginxssl.conf
+启动nginx后即可通过域名或外网IP访问接口
+
+运行环境：Ubuntu 16.04 Server
+
+项目依赖：
+ubuntu：Python3、ffmpeg、nginx
+Python 3：gunicorn、flask、numpy、cv2、dlib、face_recognition、sklearn、matplotlib、pymysql、redis、librosa、flask_cors
 
 ### 前端
 
 现在使用微信小程序开发
+
