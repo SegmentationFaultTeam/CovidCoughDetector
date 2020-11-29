@@ -32,3 +32,10 @@ Python 3：gunicorn、flask、numpy、cv2、dlib、face_recognition、sklearn、
 
 
 
+[小程序实例](https://github.com/SegmentationFaultTeam/CovidCoughDetector/tree/master/docs/1.png)
+
+
+
+https://github.com/SegmentationFaultTeam/CovidCoughDetector/tree/master/docs/2.png
+
+https://github.com/SegmentationFaultTeam/CovidCoughDetector/tree/master/docs/3.png
